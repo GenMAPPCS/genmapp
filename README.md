@@ -1,6 +1,6 @@
 Notice
 ------
-*The GenMAPP project is no longer funded or actively supported. The last version of GenMAPP was GenMAPP-CS, which is available as a beta version.* 
+**The GenMAPP project is no longer funded or actively supported. The last version of GenMAPP was GenMAPP-CS, which is available as a beta version.**
 
 We recommend the following open-source tools:
 
