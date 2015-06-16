@@ -1,0 +1,10 @@
+; GenMAPPDBDL.def : Declares the module parameters for the DLL.
+
+LIBRARY      "GenMAPPDBDL"
+
+EXPORTS
+   InvokeFullDBDL		@1
+   InvokeCDDBCopier		@2
+   WriteStringKey		@3
+   InvokeUpdate			@4
+   CheckForGMUpdates	@5

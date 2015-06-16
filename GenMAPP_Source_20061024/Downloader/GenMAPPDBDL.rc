@@ -1,0 +1,427 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)\r\n"
+    "LANGUAGE 9, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#include ""res\\GenMAPPDBDL.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""     // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x2L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904e4"
+        BEGIN
+            VALUE "CompanyName", "Gladstone Institutes, Inc."
+            VALUE "FileDescription", "GenMAPP Database Acquisition Tool"
+            VALUE "FileVersion", "1.0.0.1"
+            VALUE "InternalName", "GenMAPPDBDL.dll"
+            VALUE "LegalCopyright", "Gladstone Institutes, Inc..  All rights reserved."
+            VALUE "OriginalFilename", "GenMAPPDBDL.dll"
+            VALUE "ProductName", "GenMAPP Database Acquisition Tool"
+            VALUE "ProductVersion", "1.0.0.1"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1252
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_CDDBCOPY DIALOGEX 0, 0, 456, 265
+STYLE DS_SETFONT | DS_FIXEDSYS | DS_CENTER | WS_POPUP | WS_CAPTION | 
+    WS_SYSMENU | WS_THICKFRAME
+CAPTION "GenMAPP Data Acquisition Tool"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "Start",IDOK,399,244,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,344,244,50,14
+    GROUPBOX        "Database Selection Summary",IDC_SELECTSUM,7,83,442,71
+    LTEXT           "Total Number of Databases Selected:",IDC_LBLSELCOUNT,14,
+                    96,124,10
+    LTEXT           "Disk Space Required (Estimated):",IDC_LBLDISKSPACE,14,
+                    128,124,9
+    LTEXT           "Free Space on Hard Drive(s):",IDC_LBLFREESPACE,14,140,
+                    97,8
+    GROUPBOX        "Internet Connection Status",IDC_CONNSTATFRM,7,221,214,
+                    37
+    LTEXT           "Estimated Download Time:",IDC_LBLESTDLTIME,14,108,124,9
+    RTEXT           "0",IDC_SELCOUNT,144,96,65,8
+    RTEXT           "",IDC_DLTIME,149,108,60,8
+    RTEXT           "0",IDC_TOTALDLSIZE,149,129,60,8
+    LTEXT           "Welcome to the GenMAPP Database Acquisition Tool. This tool retrieves databases from GenMAPP.org and other sites supporting GenMAPP over the internet. This tool can be invoked any time from the GenMAPP application.",
+                    IDC_LBLTOPMESSAGE,7,7,442,17
+    LISTBOX         IDC_DLQUEUE,231,106,207,28,LBS_SORT | 
+                    LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_HSCROLL | 
+                    WS_TABSTOP
+    CONTROL         "",IDC_DBDLLIST,"SysListView32",LVS_REPORT | 
+                    LVS_SINGLESEL | LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,
+                    173,27,276,54
+    LTEXT           "Download Queue",IDC_LBLDLQUEUE,231,96,56,8
+    CONTROL         "",IDC_DBFOLDERTREE,"SysTreeView32",TVS_HASBUTTONS | 
+                    TVS_HASLINES | TVS_LINESATROOT | TVS_TRACKSELECT | 
+                    WS_BORDER | WS_TABSTOP,7,27,161,54
+    GROUPBOX        "Download Destination Locations",IDC_GRPDLDESTINATIONS,7,
+                    156,442,63
+    LTEXT           "Gene Databases:",IDC_LBLGENEDB,14,169,69,8
+    LTEXT           "MAPP Archives:",IDC_LBLMAPPARC,14,191,69,8
+    LTEXT           "Expression Datasets:",IDC_LBLEXPDATA,14,180,69,8
+    PUSHBUTTON      "Change...",IDC_GENEDIR,389,168,50,12,0,WS_EX_STATICEDGE
+    PUSHBUTTON      "Change...",IDC_MAPPDIR,389,190,50,12,0,WS_EX_STATICEDGE
+    PUSHBUTTON      "Change...",IDC_GEXDIR,389,179,50,12,0,WS_EX_STATICEDGE
+    EDITTEXT        IDC_GDB,87,168,296,12,ES_AUTOHSCROLL | NOT WS_BORDER
+    EDITTEXT        IDC_MAPP,87,190,296,12,ES_AUTOHSCROLL | NOT WS_BORDER
+    EDITTEXT        IDC_GEX,87,179,296,12,ES_AUTOHSCROLL | NOT WS_BORDER
+    LTEXT           "Other Infomation:",IDC_LBLOTRINFO,14,202,69,8
+    PUSHBUTTON      "Change...",IDC_OTRDIR,389,201,50,12,0,WS_EX_STATICEDGE
+    EDITTEXT        IDC_OTR,87,201,296,12,ES_AUTOHSCROLL | NOT WS_BORDER
+    LTEXT           "Gene Databases containing GenBank IDs are available only by special request. Please click button below for more information.",
+                    IDC_READMETEXT,181,31,252,19,NOT WS_VISIBLE
+    PUSHBUTTON      "More Information",IDC_SHOWREADME,262,56,71,14,NOT 
+                    WS_VISIBLE
+    PUSHBUTTON      "Remove",IDC_REMOVEDB,389,138,50,12,WS_DISABLED,
+                    WS_EX_STATICEDGE
+    ICON            IDI_REDLIGHT,IDC_STATUS_IND,9,236,20,20,SS_CENTERIMAGE,
+                    WS_EX_TRANSPARENT
+    LTEXT           "Testing for Internet Connectivity...",IDC_INETSTAT,34,
+                    232,184,8
+    LTEXT           "Connection speed to server: 128KB/Sec",IDC_CONNSPEED,34,
+                    243,184,8
+    GROUPBOX        "Options",IDC_GRPOPTIONS,223,221,117,37
+    PUSHBUTTON      "Refresh",IDC_REFRESH,231,235,50,14,WS_DISABLED
+    LISTBOX         IDC_FREESPACELST,124,140,86,11,LBS_SORT | 
+                    LBS_NOINTEGRALHEIGHT | NOT WS_BORDER | WS_VSCROLL | 
+                    WS_TABSTOP,WS_EX_RIGHT
+    PUSHBUTTON      "Advanced...",IDC_BTNADVDLG,285,235,50,14
+    LTEXT           "Total Download Size:",IDC_LBLDLSIZEKEY,15,118,117,8
+    LTEXT           "0",IDC_LBLDLSIZEVAL,149,119,60,8,0,WS_EX_RIGHT
+END
+
+IDD_PROGDLG DIALOGEX 0, 0, 454, 266
+STYLE DS_SETFONT | DS_3DLOOK | DS_FIXEDSYS | DS_CENTER | WS_POPUP | 
+    WS_CAPTION | WS_SYSMENU | WS_THICKFRAME
+CAPTION "GenMAPP Data Acquisition Tool"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,397,245,50,14,WS_DISABLED
+    PUSHBUTTON      "Back",IDCANCEL,340,245,50,14
+    CONTROL         "",IDC_OVERALLPRG,"msctls_progress32",WS_BORDER | 0x1,30,
+                    205,394,12
+    LTEXT           "File in Download",IDC_FILEINDL,30,195,394,8
+    LTEXT           "",IDC_FILETALLY,120,117,47,12,0,WS_EX_RIGHT
+    CONTROL         2031,IDC_GENMAPPSPLASH,"Static",SS_BITMAP | 
+                    SS_REALSIZEIMAGE,279,0,176,99
+    GROUPBOX        "Options",IDC_GRPOPTIONS,208,225,127,34,0,
+                    WS_EX_TRANSPARENT
+    PUSHBUTTON      "Abort",IDC_ABORT,221,237,50,14
+    PUSHBUTTON      "Pause",IDC_PAUSE,275,237,50,14
+    CONTROL         "",IDC_LSTQUEUEDFILES,"SysListView32",LVS_REPORT | 
+                    LVS_SINGLESEL | LVS_ALIGNLEFT | LVS_NOSORTHEADER | 
+                    WS_BORDER | WS_TABSTOP,7,7,268,92
+    GROUPBOX        "Current File",IDC_GRPCURRENTFILE,182,105,267,83
+    GROUPBOX        "Download Statistics",IDC_GRPDLSTATISTICS,7,106,170,82
+    LTEXT           "Server Name:",IDC_LBLSERVERNAME,195,125,58,8
+    LTEXT           "Server Location:",IDC_LBLLOCATION,194,135,55,8
+    LTEXT           "Bytes Downloaded:",IDC_LBLBYTEDOWNLOADED,194,145,70,8
+    LTEXT           "File Name:",IDC_LBLFILENAME,194,115,49,8
+    LTEXT           "Network Transport:",IDC_LBLTRANSPORT,194,163,64,8
+    LTEXT           "File Type:",IDC_LBLFILETYPE,194,174,54,8
+    LTEXT           "",IDC_LBLDLTOTALS,116,130,50,8,0,WS_EX_RIGHT
+    LTEXT           "Download Speed:",IDC_LBLDLSPEED,17,144,62,8
+    LTEXT           "Remaining Time:",IDC_LBLREMAININGTIME,17,158,59,8
+    LTEXT           "",IDC_DLSPEED,89,145,61,8,0,WS_EX_RIGHT
+    LTEXT           "",IDC_REMAININGTIME,89,159,55,8,0,WS_EX_RIGHT
+    LTEXT           "",IDC_FILENAME,277,116,153,8,0,WS_EX_RIGHT
+    LTEXT           "",IDC_SERVERNAME,277,127,153,8,0,WS_EX_RIGHT
+    LTEXT           "",IDC_LOCATION,277,138,153,8,0,WS_EX_RIGHT
+    LTEXT           "",IDC_BYTESDOWNLOADED,279,148,153,8,0,WS_EX_RIGHT
+    LTEXT           "",IDC_TRANSPORT,279,163,153,8,0,WS_EX_RIGHT
+    LTEXT           "",IDC_FILETYPE,278,175,153,8,0,WS_EX_RIGHT
+    LTEXT           "Downloading File:",IDC_DLFILE,20,121,57,8
+    LTEXT           "Bytes Downloaded:",IDC_TOTALBYTESDL,19,132,63,8
+    LISTBOX         IDC_SPEEDPROG,5,6,272,83,LBS_NOINTEGRALHEIGHT | 
+                    WS_VSCROLL | WS_TABSTOP
+END
+
+IDD_GENBANKWARNING DIALOGEX 0, 0, 302, 164
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | DS_CENTER | WS_POPUP | 
+    WS_CAPTION | WS_SYSMENU
+CAPTION "Please Note:"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,125,121,50,14
+    CONTROL         "Do not show this note in the future.",IDC_CHKDONTSHOW,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,7,147,131,10
+    LTEXT           "To ensure optimal program performance, it is critical that you download the appropriate gene database.",
+                    IDC_STATIC,7,7,288,19
+    LTEXT           "To ensure optimal program performance, it is critical that you download the appropriate gene database.",
+                    IDC_STATIC,7,7,288,19
+    LTEXT           "Gene Databases containing the cataloging system GenBank require substantially longer download time and may decrease performance of the GenMAPP program due to the large number of IDs maintained.",
+                    IDC_STATIC,7,28,288,34
+    LTEXT           "Affected users are encouraged to load gene expression data containing ID systems other than GenBank (see below for supported ID systems) and download an appropriate gene database for that system ID.",
+                    IDC_STATIC,7,81,288,27
+    LTEXT           "Currently this is only an issue for users with human, mouse, rat, and drosophila gene expression data.",
+                    IDC_STATIC,7,58,288,19
+END
+
+IDD_UPDATEDLG DIALOGEX 0, 0, 455, 265
+STYLE DS_SETFONT | DS_MODALFRAME | DS_3DLOOK | DS_FIXEDSYS | DS_CENTER | 
+    WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "GenMAPP Internet Update"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,398,244,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,346,244,50,14
+    CONTROL         "",IDC_OVERALLPRG,"msctls_progress32",WS_BORDER | 0x1,34,
+                    209,395,18
+    CONTROL         2031,IDC_GENMAPPSPLASH,"Static",SS_BITMAP | 
+                    SS_REALSIZEIMAGE,279,0,176,99
+    CONTROL         "Update Log",IDC_LBLUPDATELOG,"Static",SS_LEFTNOWORDWRAP | 
+                    WS_GROUP,7,7,38,8
+    CONTROL         "",IDC_LSTUPDATELOG,"SysListView32",LVS_REPORT | 
+                    LVS_ALIGNLEFT | LVS_NOCOLUMNHEADER | WS_BORDER | 
+                    WS_TABSTOP,7,17,112,81
+    PUSHBUTTON      "Button1",IDC_BUTTON1,45,236,50,14,NOT WS_VISIBLE
+    LTEXT           "Update Progress",IDC_LABUPDATEPRG,34,199,55,8
+    GROUPBOX        "Update Information",IDC_GRPUPDATEINFO,279,104,169,84
+    LTEXT           "Update is in Progress",IDC_LABUPDATESUM,293,121,140,36
+END
+
+IDD_PROMPTFORUPDATE DIALOGEX 0, 0, 247, 54
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | DS_CENTER | WS_POPUP | 
+    WS_CAPTION | WS_SYSMENU
+CAPTION "GenMAPP Updates Available"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "Yes",IDOK,64,33,50,14
+    PUSHBUTTON      "No",IDCANCEL,132,33,50,14
+    LTEXT           "There is an update to GenMAPP available. Would you like to download and apply the update now?",
+                    IDC_STATIC,7,7,233,17
+END
+
+IDD_ADVOPTIONS DIALOGEX 0, 0, 274, 82
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "Advanced Options"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,217,7,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,217,24,50,14
+    CONTROL         "Delete Compressed Files After Extracting Contents",
+                    IDC_CHKDELCOMPFILES,"Button",BS_AUTOCHECKBOX | 
+                    BS_MULTILINE | WS_TABSTOP,7,7,179,21
+    CONTROL         "Automatically Overwrite Existing Data Files",
+                    IDC_CHKOVRWRITEDATA,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,7,27,174,10
+END
+
+IDD_FILEOVERWRITE DIALOGEX 0, 0, 309, 105
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | DS_CENTER | WS_POPUP | 
+    WS_CAPTION | WS_SYSMENU
+CAPTION "Do You Wish to Overwrite?"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    PUSHBUTTON      "Yes",IDOK,36,84,50,14
+    DEFPUSHBUTTON   "No",IDCANCEL,160,84,50,14
+    PUSHBUTTON      "Yes to All",IDC_BTNYESTOALL,98,84,50,14
+    PUSHBUTTON      "No to All",IDC_BTNNOTOALL,222,84,50,14
+    LTEXT           "One or more of the files below already exists on your computer. Click Yes if you would like to overwrite them. Click Yes to All to overwrite any of the files below and any other files you have selected to download which already exist on your computer.",
+                    IDC_STATIC,7,7,295,27
+    LISTBOX         IDC_LSTOVERWRITE,7,38,295,33,LBS_SORT | 
+                    LBS_NOINTEGRALHEIGHT | LBS_NOSEL | NOT WS_BORDER | 
+                    WS_VSCROLL | WS_TABSTOP
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_CDDBCOPY, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 449
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 258
+    END
+
+    IDD_PROGDLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 447
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 259
+    END
+
+    IDD_GENBANKWARNING, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 295
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 157
+    END
+
+    IDD_UPDATEDLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 448
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 258
+    END
+
+    IDD_PROMPTFORUPDATE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 240
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 47
+    END
+
+    IDD_ADVOPTIONS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 267
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 75
+    END
+
+    IDD_FILEOVERWRITE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 302
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 98
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_GENMAPPSPLASH       BITMAP                  "res\\GenMAPPv2SplashOnly.bmp"
+IDB_GENMAPPSPLASHSM     BITMAP                  "res\\GenMAPPv2SplashOnlySmall.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDI_FOLDEROPEN          ICON                    "res\\Folder_Open.ico"
+IDI_FOLDERCLOSED        ICON                    "res\\Folder_Closed.ico"
+IDI_REDLIGHT            ICON                    "res\\icon1.ico"
+IDI_YELLOWLIGHT         ICON                    "res\\ico00001.ico"
+IDI_GREENLIGHT          ICON                    "res\\ico00002.ico"
+IDI_CHECKMARK           ICON                    "res\\ico00003.ico"
+IDI_RIGHTARROW          ICON                    "res\\ico00004.ico"
+IDI_REDX                ICON                    "res\\icon2.ico"
+IDI_GENMAPP             ICON                    "res\\GenMAPP.ico"
+IDI_DOT                 ICON                    "res\\dot.ico"
+IDI_PAUSE               ICON                    "res\\redx1.ico"
+IDI_BLANK               ICON                    "res\\pause1.ico"
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+LANGUAGE 9, 1
+#pragma code_page(1252)
+#include "res\GenMAPPDBDL.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"     // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

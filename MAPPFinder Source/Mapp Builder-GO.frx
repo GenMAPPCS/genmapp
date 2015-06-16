@@ -1,0 +1,9 @@
+ÿ?This MAPP is built based on the Gene Ontology hierarchy 
+(www.geneontology.org). The MAPP contains the genes 
+associated with this GO term and the genes associated with all of 
+the children of this term. For human data the MAPPs are based on 
+the SwissProt gene associations, for mouse the MGI associations 
+are used, and for yeast the SGD associations are used. The gene 
+association files were downloaded February 14, 2002. Individual 
+MAPPs are not made for terms with less than 5 genes associated, 
+but those terms will appear on the MAPP for their parent term.

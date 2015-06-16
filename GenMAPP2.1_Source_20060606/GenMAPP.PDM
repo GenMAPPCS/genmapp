@@ -1,0 +1,351 @@
+[Root]
+Most Recent Package=GenMAPP Dependency
+
+
+[Package|GenMAPP Setup|Root]
+SubWizProgID=PDWizard.SetupPkgSubWiz
+BuildFolder=D:\GenMAPP\Programs\Package
+
+[Package|GenMAPP Setup|Configure DAO ISAMs]
+Applicable=No
+
+[Package|GenMAPP Setup|Configure DAO ODBC]
+JetWorkspace=
+ODBCDirect=
+
+[Package|GenMAPP Setup|Files Found]
+GenMAPP.gdb=D:\GenMAPP\Programs\GenMAPP.gdb
+
+[Package|GenMAPP Setup|Files Released]
+GenMAPP.CHI=
+
+[Package|GenMAPP Setup|Missing Dependency Information]
+
+[Package|GenMAPP Setup|Out-of-Date Dependency Information]
+
+[Package|GenMAPP Setup|Files Added]
+d:\genmapp\programs\exptmpl.gtp=
+d:\genmapp\programs\mapptmpl.gtp=
+d:\genmapp\programs\install files\readme.txt=
+genmapp.gdb=
+d:\genmapp\programs\install files\license.txt=
+d:\genmapp\programs\install files\mu_apoptosis.mapp=
+d:\genmapp\programs\install files\mu_fadeg.mapp=
+d:\genmapp\programs\install files\mu_g protein signaling.mapp=
+d:\genmapp\programs\install files\mu_inflammatory_response.mapp=
+d:\genmapp\programs\install files\cardiomyopathy_model.gex=
+
+[Package|GenMAPP Setup|Files Removed]
+
+[Package|GenMAPP Setup|Files In Project]
+D:\GenMAPP\Programs\GenMAPP.exe=Yes
+C:\WINNT\system32\Msvbvm60.dll=Yes
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\OLEAUT32.DLL=Yes
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\OLEPRO32.DLL=Yes
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\ASYCFILT.DLL=Yes
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\STDOLE2.TLB=Yes
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\COMCAT.DLL=Yes
+C:\WINNT\system32\hhctrl.ocx=Yes
+C:\WINNT\system32\itss.dll=Yes
+C:\WINNT\system32\itircl.dll=Yes
+C:\WINNT\system32\hh.exe=Yes
+C:\Program Files\Common Files\Microsoft Shared\DAO\dao360.dll=Yes
+C:\WINNT\system32\msjet40.dll=Yes
+C:\WINNT\system32\msjter40.dll=Yes
+C:\WINNT\system32\msjint40.dll=Yes
+C:\WINNT\system32\vbajet32.dll=Yes
+C:\WINNT\system32\expsrv.dll=Yes
+C:\WINNT\system32\mswstr10.dll=Yes
+C:\WINNT\system32\mswdat10.dll=Yes
+C:\WINNT\system32\msrd2x40.dll=Yes
+C:\WINNT\system32\msrd3x40.dll=Yes
+C:\WINNT\system32\msrepl40.dll=Yes
+C:\WINNT\system32\msjtes40.dll=Yes
+C:\WINNT\system32\VB5DB.DLL=Yes
+C:\WINNT\system32\Mscomctl.ocx=Yes
+C:\WINNT\system32\Comdlg32.ocx=Yes
+C:\WINNT\system32\Msflxgrd.ocx=Yes
+D:\GenMAPP\Programs\GenMAPP.chm=Yes
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\SETUP.EXE=Yes
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\SETUP1.EXE=Yes
+C:\WINNT\system32\VB6STKIT.DLL=Yes
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\ST6UNST.EXE=Yes
+D:\GenMAPP\Programs\ExpTmpl.gtp=Yes
+D:\GenMAPP\Programs\MAPPTmpl.gtp=Yes
+D:\GenMAPP\Programs\Install Files\ReadMe.txt=Yes
+D:\GenMAPP\Programs\Install Files\License.txt=Yes
+D:\GenMAPP\Programs\Install Files\mu_apoptosis.mapp=Yes
+D:\GenMAPP\Programs\Install Files\mu_FADeg.mapp=Yes
+D:\GenMAPP\Programs\Install Files\mu_G Protein Signaling.mapp=Yes
+D:\GenMAPP\Programs\Install Files\mu_Inflammatory_Response.mapp=Yes
+D:\GenMAPP\Programs\Install Files\Cardiomyopathy_Model.gex=Yes
+D:\GenMAPP\Programs\GenMAPP.gdb=Yes
+
+[Package|GenMAPP Setup|Configure Registry Files]
+Applicable=No
+
+[Package|GenMAPP Setup|Configure Remote Servers]
+Applicable=No
+
+[Package|GenMAPP Setup|Install Locations]
+D:\GenMAPP\Programs\GenMAPP.exe=$(AppPath)
+C:\WINNT\system32\Msvbvm60.dll=$(WinSysPathSysFile)
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\OLEAUT32.DLL=$(WinSysPathSysFile)
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\OLEPRO32.DLL=$(WinSysPathSysFile)
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\ASYCFILT.DLL=$(WinSysPathSysFile)
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\STDOLE2.TLB=$(WinSysPathSysFile)
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\COMCAT.DLL=$(WinSysPathSysFile)
+C:\WINNT\system32\hhctrl.ocx=$(WinSysPath)
+C:\WINNT\system32\itss.dll=$(WinSysPath)
+C:\WINNT\system32\itircl.dll=$(WinSysPath)
+C:\WINNT\system32\hh.exe=$(WinSysPath)
+C:\Program Files\Common Files\Microsoft Shared\DAO\dao360.dll=$(MSDAOPath)
+C:\WINNT\system32\msjet40.dll=$(WinSysPathSysFile)
+C:\WINNT\system32\msjter40.dll=$(WinSysPathSysFile)
+C:\WINNT\system32\msjint40.dll=$(WinSysPathSysFile)
+C:\WINNT\system32\vbajet32.dll=$(WinSysPathSysFile)
+C:\WINNT\system32\expsrv.dll=$(WinSysPathSysFile)
+C:\WINNT\system32\mswstr10.dll=$(WinSysPathSysFile)
+C:\WINNT\system32\mswdat10.dll=$(WinSysPathSysFile)
+C:\WINNT\system32\msrd2x40.dll=$(WinSysPathSysFile)
+C:\WINNT\system32\msrd3x40.dll=$(WinSysPathSysFile)
+C:\WINNT\system32\msrepl40.dll=$(WinSysPathSysFile)
+C:\WINNT\system32\msjtes40.dll=$(WinSysPathSysFile)
+C:\WINNT\system32\VB5DB.DLL=$(WinSysPath)
+C:\WINNT\system32\Mscomctl.ocx=$(WinSysPath)
+C:\WINNT\system32\Comdlg32.ocx=$(WinSysPath)
+C:\WINNT\system32\Msflxgrd.ocx=$(WinSysPath)
+D:\GenMAPP\Programs\GenMAPP.chm=$(AppPath)
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\SETUP.EXE=$(AppPath)
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\SETUP1.EXE=$(WinPath)
+C:\WINNT\system32\VB6STKIT.DLL=$(WinSysPathSysFile)
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\ST6UNST.EXE=$(WinPath)
+D:\GenMAPP\Programs\ExpTmpl.gtp=$(AppPath)
+D:\GenMAPP\Programs\MAPPTmpl.gtp=$(AppPath)
+D:\GenMAPP\Programs\Install Files\ReadMe.txt=$(AppPath)
+D:\GenMAPP\Programs\Install Files\GenMAPP.gdb=$(AppPath)
+D:\GenMAPP\Programs\Install Files\License.txt=$(AppPath)
+D:\GenMAPP\Programs\Install Files\mu_apoptosis.mapp=$(AppPath)
+D:\GenMAPP\Programs\Install Files\mu_FADeg.mapp=$(AppPath)
+D:\GenMAPP\Programs\Install Files\mu_G Protein Signaling.mapp=$(AppPath)
+D:\GenMAPP\Programs\Install Files\mu_Inflammatory_Response.mapp=$(AppPath)
+D:\GenMAPP\Programs\Install Files\Cardiomyopathy_Model.gex=$(AppPath)
+D:\GenMAPP\Programs\GenMAPP.gdb=$(AppPath)
+
+[Package|GenMAPP Setup|Configure Shared Files]
+Applicable=Yes
+D:\GenMAPP\Programs\GenMAPP.exe=No
+D:\GenMAPP\Programs\GenMAPP.chm=No
+D:\GenMAPP\Programs\ExpTmpl.gtp=No
+D:\GenMAPP\Programs\MAPPTmpl.gtp=No
+D:\GenMAPP\Programs\Install Files\ReadMe.txt=No
+D:\GenMAPP\Programs\Install Files\GenMAPP.gdb=No
+D:\GenMAPP\Programs\Install Files\License.txt=No
+D:\GenMAPP\Programs\Install Files\mu_apoptosis.mapp=No
+D:\GenMAPP\Programs\Install Files\mu_FADeg.mapp=No
+D:\GenMAPP\Programs\Install Files\mu_G Protein Signaling.mapp=No
+D:\GenMAPP\Programs\Install Files\mu_Inflammatory_Response.mapp=No
+D:\GenMAPP\Programs\Install Files\Cardiomyopathy_Model.gex=No
+D:\GenMAPP\Programs\GenMAPP.gdb=No
+
+[Package|GenMAPP Setup|Distribution]
+Type=single
+Size=
+Title=GenMAPP 1.0 Beta
+
+[Package|GenMAPP Setup|IconGroups]
+Group0=GenMAPP
+PrivateGroup0=-1
+Parent0=$(Programs)
+
+[Package|GenMAPP Setup|GenMAPP]
+Icon1=GenMAPP.exe
+Title1=GenMAPP
+StartIn1=$(AppPath)
+Key1=Icon1
+
+[Package|GenMAPP Setup|Package]
+PackageFolder=D:\GenMAPP\Programs\Package
+ProjectFolder=D:\GenMAPP\Programs
+ServerSideCab=
+File1=D:\GenMAPP\Programs\Package\setup.exe
+File2=D:\GenMAPP\Programs\Package\Setup.Lst
+File3=D:\GenMAPP\Programs\Package\GenMAPP.CAB
+Handler1=PDWizard.FolderDplySubWiz
+Handler2=PDWizard.WebPostDplySubWiz
+
+
+[Package|GenMAPP Dependency|Root]
+SubWizProgID=PDWizard.DepPkgSubWiz
+BuildFolder=D:\GenMAPP\Programs
+
+[Package|GenMAPP Dependency|Configure DAO ISAMs]
+Applicable=No
+
+[Package|GenMAPP Dependency|Configure DAO ODBC]
+JetWorkspace=
+ODBCDirect=
+
+[Package|GenMAPP Dependency|Files Found]
+GenMAPP.gdb=D:\GenMAPP\Programs\GenMAPP.gdb
+
+[Package|GenMAPP Dependency|Files Released]
+GenMAPP.CHI=
+license.txt=
+readme.txt=
+
+[Package|GenMAPP Dependency|Missing Dependency Information]
+C:\WINNT\system\ijl11.dll=
+
+[Package|GenMAPP Dependency|Out-of-Date Dependency Information]
+
+[Package|GenMAPP Dependency|Files Added]
+d:\genmapp\programs\exptmpl.gtp=
+d:\genmapp\programs\mapptmpl.gtp=
+readme.txt=
+genmapp.gdb=
+license.txt=
+d:\genmapp\programs\install files\mu_apoptosis.mapp=
+d:\genmapp\programs\install files\mu_fadeg.mapp=
+d:\genmapp\programs\install files\mu_g protein signaling.mapp=
+d:\genmapp\programs\install files\mu_inflammatory_response.mapp=
+d:\genmapp\programs\install files\cardiomyopathy_model.gex=
+
+[Package|GenMAPP Dependency|Files Removed]
+
+[Package|GenMAPP Dependency|Files In Project]
+D:\GenMAPP\Programs\GenMAPP.exe=Yes
+C:\WINNT\system32\Msvbvm60.dll=Yes
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\OLEAUT32.DLL=Yes
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\OLEPRO32.DLL=Yes
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\ASYCFILT.DLL=Yes
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\STDOLE2.TLB=Yes
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\COMCAT.DLL=Yes
+C:\WINNT\system32\hhctrl.ocx=Yes
+C:\WINNT\system32\itss.dll=Yes
+C:\WINNT\system32\itircl.dll=Yes
+C:\WINNT\system32\hh.exe=Yes
+C:\Program Files\Common Files\Microsoft Shared\DAO\dao360.dll=Yes
+C:\WINNT\system32\msjet40.dll=Yes
+C:\WINNT\system32\msjter40.dll=Yes
+C:\WINNT\system32\msjint40.dll=Yes
+C:\WINNT\system32\vbajet32.dll=Yes
+C:\WINNT\system32\expsrv.dll=Yes
+C:\WINNT\system32\mswstr10.dll=Yes
+C:\WINNT\system32\mswdat10.dll=Yes
+C:\WINNT\system32\msrd2x40.dll=Yes
+C:\WINNT\system32\msrd3x40.dll=Yes
+C:\WINNT\system32\msrepl40.dll=Yes
+C:\WINNT\system32\msjtes40.dll=Yes
+C:\WINNT\system32\VB5DB.DLL=Yes
+C:\WINNT\system32\Mscomctl.ocx=Yes
+C:\WINNT\system32\Comdlg32.ocx=Yes
+C:\WINNT\system32\Msflxgrd.ocx=Yes
+D:\GenMAPP\Programs\GenMAPP.chm=Yes
+D:\GenMAPP\Programs\ExpTmpl.gtp=Yes
+D:\GenMAPP\Programs\MAPPTmpl.gtp=Yes
+D:\GenMAPP\Programs\Install Files\mu_apoptosis.mapp=Yes
+D:\GenMAPP\Programs\Install Files\mu_FADeg.mapp=Yes
+D:\GenMAPP\Programs\Install Files\mu_G Protein Signaling.mapp=Yes
+D:\GenMAPP\Programs\Install Files\mu_Inflammatory_Response.mapp=Yes
+D:\GenMAPP\Programs\Install Files\Cardiomyopathy_Model.gex=Yes
+D:\GenMAPP\Programs\GenMAPP.gdb=Yes
+C:\WINNT\system\ijl11.dll=Yes
+C:\WINNT\system32\msvbvm50.dll=Yes
+
+[Package|GenMAPP Dependency|Configure Registry Files]
+Applicable=No
+
+[Package|GenMAPP Dependency|Configure Remote Servers]
+Applicable=No
+
+[Package|GenMAPP Dependency|Install Locations]
+D:\GenMAPP\Programs\GenMAPP.exe=$(AppPath)
+C:\WINNT\system32\Msvbvm60.dll=$(WinSysPathSysFile)
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\OLEAUT32.DLL=$(WinSysPathSysFile)
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\OLEPRO32.DLL=$(WinSysPathSysFile)
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\ASYCFILT.DLL=$(WinSysPathSysFile)
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\STDOLE2.TLB=$(WinSysPathSysFile)
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\COMCAT.DLL=$(WinSysPathSysFile)
+C:\WINNT\system32\hhctrl.ocx=$(WinSysPath)
+C:\WINNT\system32\itss.dll=$(WinSysPath)
+C:\WINNT\system32\itircl.dll=$(WinSysPath)
+C:\WINNT\system32\hh.exe=$(WinSysPath)
+C:\Program Files\Common Files\Microsoft Shared\DAO\dao360.dll=$(MSDAOPath)
+C:\WINNT\system32\msjet40.dll=$(WinSysPathSysFile)
+C:\WINNT\system32\msjter40.dll=$(WinSysPathSysFile)
+C:\WINNT\system32\msjint40.dll=$(WinSysPathSysFile)
+C:\WINNT\system32\vbajet32.dll=$(WinSysPathSysFile)
+C:\WINNT\system32\expsrv.dll=$(WinSysPathSysFile)
+C:\WINNT\system32\mswstr10.dll=$(WinSysPathSysFile)
+C:\WINNT\system32\mswdat10.dll=$(WinSysPathSysFile)
+C:\WINNT\system32\msrd2x40.dll=$(WinSysPathSysFile)
+C:\WINNT\system32\msrd3x40.dll=$(WinSysPathSysFile)
+C:\WINNT\system32\msrepl40.dll=$(WinSysPathSysFile)
+C:\WINNT\system32\msjtes40.dll=$(WinSysPathSysFile)
+C:\WINNT\system32\VB5DB.DLL=$(WinSysPath)
+C:\WINNT\system32\Mscomctl.ocx=$(WinSysPath)
+C:\WINNT\system32\Comdlg32.ocx=$(WinSysPath)
+C:\WINNT\system32\Msflxgrd.ocx=$(WinSysPath)
+D:\GenMAPP\Programs\GenMAPP.chm=$(AppPath)
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\SETUP.EXE=$(AppPath)
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\SETUP1.EXE=$(WinPath)
+C:\WINNT\system32\VB6STKIT.DLL=$(WinSysPathSysFile)
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\ST6UNST.EXE=$(WinPath)
+D:\GenMAPP\Programs\ExpTmpl.gtp=$(AppPath)
+D:\GenMAPP\Programs\MAPPTmpl.gtp=$(AppPath)
+D:\GenMAPP\Programs\Install Files\ReadMe.txt=$(AppPath)
+D:\GenMAPP\Programs\Install Files\GenMAPP.gdb=$(AppPath)
+D:\GenMAPP\Programs\Install Files\License.txt=$(AppPath)
+D:\GenMAPP\Programs\Install Files\mu_apoptosis.mapp=$(AppPath)
+D:\GenMAPP\Programs\Install Files\mu_FADeg.mapp=$(AppPath)
+D:\GenMAPP\Programs\Install Files\mu_G Protein Signaling.mapp=$(AppPath)
+D:\GenMAPP\Programs\Install Files\mu_Inflammatory_Response.mapp=$(AppPath)
+D:\GenMAPP\Programs\Install Files\Cardiomyopathy_Model.gex=$(AppPath)
+D:\GenMAPP\Programs\GenMAPP.gdb=$(AppPath)
+C:\WINNT\system\ijl11.dll=$(WinSysPath)
+C:\WINNT\system32\msvbvm50.dll=$(WinSysPathSysFile)
+
+[Package|GenMAPP Dependency|Configure Shared Files]
+Applicable=Yes
+D:\GenMAPP\Programs\GenMAPP.exe=No
+D:\GenMAPP\Programs\GenMAPP.chm=No
+D:\GenMAPP\Programs\ExpTmpl.gtp=No
+D:\GenMAPP\Programs\MAPPTmpl.gtp=No
+D:\GenMAPP\Programs\Install Files\ReadMe.txt=No
+D:\GenMAPP\Programs\Install Files\GenMAPP.gdb=No
+D:\GenMAPP\Programs\Install Files\License.txt=No
+D:\GenMAPP\Programs\Install Files\mu_apoptosis.mapp=No
+D:\GenMAPP\Programs\Install Files\mu_FADeg.mapp=No
+D:\GenMAPP\Programs\Install Files\mu_G Protein Signaling.mapp=No
+D:\GenMAPP\Programs\Install Files\mu_Inflammatory_Response.mapp=No
+D:\GenMAPP\Programs\Install Files\Cardiomyopathy_Model.gex=No
+D:\GenMAPP\Programs\GenMAPP.gdb=No
+
+[Package|GenMAPP Dependency|Distribution]
+Type=single
+Size=
+Title=GenMAPP 1.0 Beta
+
+[Package|GenMAPP Dependency|IconGroups]
+Group0=GenMAPP
+PrivateGroup0=-1
+Parent0=$(Programs)
+
+[Package|GenMAPP Dependency|GenMAPP]
+Icon1=GenMAPP.exe
+Title1=GenMAPP
+StartIn1=$(AppPath)
+Key1=Icon1
+
+[Package|GenMAPP Dependency|DepFile]
+DepCabFile=GenMAPP.CAB
+DepCabRun=GenMAPP.INF
+
+[Package|GenMAPP Dependency|Package]
+PackageFolder=D:\GenMAPP\Programs
+ProjectFolder=D:\GenMAPP\Programs
+ServerSideCab=
+File1=D:\GenMAPP\Programs\GenMAPP.DEP
+Handler1=PDWizard.FolderDplySubWiz
+Handler2=PDWizard.WebPostDplySubWiz
